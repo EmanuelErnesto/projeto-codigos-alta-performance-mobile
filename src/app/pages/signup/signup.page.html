@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title class="title">Bem-vindo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="header">
+    <p class="subtitle">Se Cadastre aqui</p>
+
+    <form>
+      <div class="form-container">
+        <ion-item class="input-item">
+          <ion-input placeholder="Nome" class="input-field"></ion-input>
+          <ion-icon name="person-outline" slot="end" class="input-icon"></ion-icon>
+        </ion-item>
+
+        <ion-item class="input-item">
+          <ion-input placeholder="Email" class="input-field" type="email"></ion-input>
+          <ion-icon name="mail-outline" slot="end" class="input-icon"></ion-icon>
+        </ion-item>
+
+        <ion-item class="input-item">
+          <ion-input placeholder="Senha" class="input-field" type="password"></ion-input>
+          <ion-icon name="lock-closed-outline" slot="end" class="input-icon"></ion-icon>
+        </ion-item>
+
+        <div class="signinLink">
+          <p>Já é membro? <a [routerLink]="['/login']">Faça login agora</a></p>
+        </div>
+      </div>
+
+      <ion-fab vertical="bottom" horizontal="end" style="margin-bottom: 10px;">
+        <ion-fab-button [routerLink]="['/tabs']" class="navigate-btn">
+          <ion-icon name="chevron-forward"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </form>
+  </div>
+</ion-content>

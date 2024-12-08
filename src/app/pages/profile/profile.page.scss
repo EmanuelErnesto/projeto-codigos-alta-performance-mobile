@@ -1,0 +1,118 @@
+ion-header {
+  --background: #2c2c2c;
+}
+
+ion-toolbar {
+  background-color: var(--ion-color-primary);
+}
+
+ion-title {
+  color: #e0e0e0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+ion-content {
+  --background: #2c2c2c;
+  padding: 0 16px;
+}
+
+.update-button-container {
+  margin: 20px;
+}
+
+ion-button {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #3880ff;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+ion-button:hover {
+  transform: scale(1.05);
+  background-color: #3b79d2;
+}
+
+ion-list {
+  margin-top: 20px;
+}
+
+ion-item {
+  --background: #3a3a3a;
+  --border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+ion-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.currency-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e0e0e0;
+}
+
+.currency-rate {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.trend-icon {
+  font-size: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+ion-icon[name='arrow-up'] {
+  color: green;
+}
+
+ion-icon[name='arrow-down'] {
+  color: red;
+}
+
+ion-icon[name='arrow-forward'] {
+  color: gray;
+}
+
+ion-icon:hover {
+  transform: scale(1.2);
+}
+
+.trend-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #e0e0e0;
+}
+
+.trend-list {
+  font-size: 1rem;
+  color: #bbb; 
+  margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+  .currency-name {
+    font-size: 1rem;
+  }
+
+  .currency-rate {
+    font-size: 0.9rem;
+  }
+
+  .trend-title {
+    font-size: 1rem;
+  }
+
+  .trend-list {
+    font-size: 0.9rem;
+  }
+
+  ion-button {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,118 @@
+ion-content {
+  --background: #2c2c2c;
+  padding: 0 16px;
+}
+
+.header {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e0e0e0;
+}
+
+.subtitle {
+  color: #bbb;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.input-item {
+  --background: #3c3c3c;
+  --border-radius: 12px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.input-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.input {
+  font-size: 1rem;
+  padding-left: 10px;
+  border: none;
+  color: #e0e0e0;
+}
+
+ion-icon {
+  color: #888;
+  font-size: 1.2rem;
+}
+
+.forgetPassword {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.forgetPassword a {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #3880ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgetPassword a:hover {
+  color: #3b79d2;
+}
+
+.signupLink {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.signupLink a {
+  color: #3880ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.signupLink a:hover {
+  color: #3b79d2;
+}
+
+.fab-button {
+  --background: #3880ff;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fab-button:hover {
+  background-color: #3b79d2;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 767px) {
+  .header {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .input-item {
+    margin-bottom: 15px;
+  }
+
+  .signupLink {
+    margin-top: 15px;
+  }
+
+  .forgetPassword {
+    margin-bottom: 15px;
+  }
+}
